@@ -19,7 +19,7 @@ describe('MainContent', () => {
 
     const button = screen.getByRole('button');
     await userEvent.click(button);
-    // Troque ('help-area')) por ('help-are')) para provocar uma falha no teste
-    expect(screen.getByTestId('help-area')).toBeInTheDocument();
+    // Troque ('help-area')) por ('Broke-tests')) para provocar uma falha no teste
+    expect(screen.getByTestId('Broke-tests')).toBeInTheDocument();
   });
 });
